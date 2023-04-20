@@ -14,4 +14,4 @@ const DICT_PATH = "./dict";
     result = tokens;
   }
 	
-document.write(result);
+document.write(result + "だ");
