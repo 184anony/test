@@ -1,5 +1,4 @@
-function test(str){
-  const DICT_PATH = "./dict";
+const DICT_PATH = "./dict";
   let tokens;
   let token;
   let result;
@@ -15,9 +14,4 @@ function test(str){
     result = "むりぽ";
   }
 	
-  return result;
-}
-
-window.function = function (str) {
-  return test(str);
-}
+document.write(result);
