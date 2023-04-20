@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "column",
+    "name": "PartOfSpeech",
+    "description": "日本語の単語を抽出します",
+    "author": "いやよ",
+    "params": [
+      {
+        "name": "string",
+        "displayName": "String",
+        "type": "string"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
