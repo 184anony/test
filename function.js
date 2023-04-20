@@ -1,5 +1,6 @@
 const DICT_PATH = "./dict";
 let tokens;
+let test;
 let result;
 let str = "これはテスト用の文章です。"
 	
@@ -9,6 +10,6 @@ kuromoji.builder({dicPath: DICT_PATH}).build((err, tokenizer)=>{
 // 	tokens.forEach((token)=>{// 解析結果を順番に取得する
 // 		console.log(token);
 // 	});
-	
-	console.log(tokens[0].surface_form);
+	test = tokens[0].surface_form;
+	console.log(test);
 });
