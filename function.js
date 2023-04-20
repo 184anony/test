@@ -7,11 +7,11 @@ const DICT_PATH = "./dict";
   kuromoji.builder({dicPath: DICT_PATH}).build((err, tokenizer)=>{
     tokens = tokenizer.tokenize(str);// 解析データの取得
     //token = tokens[0].surface_form;
-    document.write(err + "だ");
+    document.write(err);
   });
 	
   if(tokens){
     result = tokens;
   }
 	
-document.write(result + "だ");
+document.write(result);
