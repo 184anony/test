@@ -12,4 +12,5 @@ kuromoji.builder({dicPath: DICT_PATH}).build((err, tokenizer)=>{
 // });
 	
 	test = tokens[0].surface_form;
+	console.log(test.surface_form);
 });
