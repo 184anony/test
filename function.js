@@ -7,6 +7,11 @@ let str = "これはテスト用の文章です。"
 kuromoji.builder({dicPath: DICT_PATH}).build((err, tokenizer)=>{
 	tokens = tokenizer.tokenize(str);// 解析データの取得
 	
-	test = tokens[0];
-	console.log(test.surface_form);
+	tokens.forEach( function(token,index,array) {
+		test += token;
+		if(index != array.length-1){
+			test += ",";
+		}
+	});
+	console.log(test);
 });
