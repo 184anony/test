@@ -12,8 +12,6 @@ const DICT_PATH = "./dict";
 	
   if(tokens){
     result = tokens;
-  }else{
-    result = "むりぽ";
   }
 	
 document.write(result);
