@@ -6,6 +6,9 @@ const DICT_PATH = "./dict";
   kuromoji.builder({dicPath: DICT_PATH}).build((err, tokenizer)=>{
     tokens = tokenizer.tokenize(str);// 解析データの取得
     token = tokens[0].surface_form;
+    if(err){
+    	token = err;
+    }
   });
 	
   if(token){
